@@ -1,0 +1,56 @@
+$xl-device: 1140px;
+$lg-device: 960px;
+$md-device: 720px;
+$sm-device: 540px;
+
+
+@mixin d($device){
+    @if $device == xs{
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+    @if $device == sm{
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $device == md{
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $device == lg{
+        @media (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $device == xl{
+        @media (max-width: 1400px) {
+            @content;
+        }
+    }
+}
+
+@mixin m($device){
+    @if $device == xs{
+        @media (min-width: 575px) {
+            @content;
+        }
+    }
+    @if $device == sm{
+        @media (min-width: 767px) {
+            @content;
+        }
+    }
+    @if $device == md{
+        @media (min-width: 991px) {
+            @content;
+        }
+    }
+    @if $device == lg{
+        @media (min-width: 1199px) {
+            @content;
+        }
+    }
+}
