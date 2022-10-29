@@ -2,6 +2,7 @@
   <div>
     <Header/>
     <Block1/>
+    <Footer/>
   </div>
   
 </template>

@@ -25,7 +25,10 @@
                     </div>
                     <div class="col-12 d-flex flex-column align-items-center justify-content-center mt-5">
                         <p class="text-white" v-if="currency.length>0">
-                            {{`${fromVal ?? '0'} ${currency.find(c=>c.value==curFrom) ? currency.find(c=>c.value==curFrom).curencyName ?? '' : ''} (${curFrom}) is equal ${toVal ?? '0'} ${currency.find(c=>c.value==curTo) ? currency.find(c=>c.value==curTo).curencyName ?? '' : ''} (${curTo})`}}
+                            <span style="color: #FFA800; font-weight: 700;" class="mr-1">{{fromVal ?? '0'}}</span>
+                            {{`${currency.find(c=>c.value==curFrom) ? currency.find(c=>c.value==curFrom).curencyName ?? '' : ''} (${curFrom}) is equal`}}
+                            <span style="color: #FFA800; font-weight: 700;" class="mx-1">{{toVal ?? '0'}}</span>
+                            {{`${currency.find(c=>c.value==curTo) ? currency.find(c=>c.value==curTo).curencyName ?? '' : ''} (${curTo})`}}
                         </p>
 
                         <button class="btn btn-primary" @click="resetConverter">
