@@ -46,6 +46,28 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-3">
+            <div class="col">
+                <!-- <adsbygoogle 
+                    :ad-slot="'2666897146'"
+                    :ad-format="'auto'"
+                    
+                    :ad-layout-key="'2666897146'"
+                    :page-url="'https://money-coverter.ecoder.com.br/'"
+                    :include-query="true"
+                    :analytics-uacct="'900-588-9293'"
+                    :analytics-domain-name="'ecoder.com.br'"
+                /> -->
+
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-8044622463024834"
+                    data-ad-slot="2666897146"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+            </div>
+        </div>
     </div>
 </section>
 </template>

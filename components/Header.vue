@@ -4,7 +4,6 @@
         <div class="row">
             <div class="col">
                 <img src="~/assets/img/logo.png" alt="Logo" class="logo">
-                <Icon icon="mdi-light:home" />
             </div>
         </div>
     </div>

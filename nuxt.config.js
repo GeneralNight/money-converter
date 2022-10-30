@@ -1,7 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Money Converter',
@@ -29,10 +29,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
     ],
-    script: [
+    script: [ 
       {
         src:"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8044622463024834", crossorigin:"anonymous"
-      }, 
+      },
       {
         src:"https://kit.fontawesome.com/3b5310efad.js", crossorigin:"anonymous"
       }
@@ -44,6 +44,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/ads.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,7 +55,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/google-analytics',
-    '@nuxtjs/google-gtag'
+    '@nuxtjs/google-gtag',
+    // ['@nuxtjs/google-adsense']
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -64,14 +66,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-adsense',
   ],
 
   styleResources: {
     scss: [
-        '~/assets/scss/responsive.scss',
+      '~/assets/scss/responsive.scss',
     ]
-},
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -105,7 +106,10 @@ export default {
     additionalAccounts:[]
   },
 
-  'google-adsense': {
-    id: 'ca-pub-#########'
-  },
+  // 'google-adsense': {
+  //   id: 'ca-pub-8044622463024834',
+  //   analyticsUacct: '900-588-9293',
+  //   analyticsDomainName: 'ecoder.com.br',
+    
+  // },
 }
